@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Time Tracker</title>
+    <style type="text/css">
+      #stopTimerBtn {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Time Tracker</h1>
+
+  </body>
+
+  <p>Check for idle time greater than <input id="idleTimeInput" value="5"/>seconds <i>ideally 600secs</i></p>
+  <button id="startTimerBtn">Start Timer</button>
+  <button id="stopTimerBtn">Stop Timer</button>
+  <br/>
+  <p>Time since timer started: <div id="time">0 secs</div></p>
+
+  <script>
+    // You can also require other files to run in this process
+    require('./renderer.js')
+  </script>
+</html>
